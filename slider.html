@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+	<style type="text/css">
+		.owl-parent
+		{
+			background-color: #ddd;
+			display: flex;
+		}
+		.box
+		{
+			height: 150px;
+		
+			margin:10px; 
+			background: maroon;
+		}
+		
+.owl-carousel .owl-nav button.owl-prev
+{
+
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0 !important;
+    font: inherit;
+    position: absolute;
+    top: 30%;
+
+}
+.owl-carousel .owl-nav button.owl-next
+{
+ background: none;
+    color: inherit;
+    border: none;
+    padding: 0 !important;
+    font: inherit;
+    position: absolute;
+    top: 30%;
+    right:0;
+}
+
+	</style>
+</head>
+<body>
+<div class="owl-parent owl-carousel owl-itmes">
+	<div class="box">
+		<img src="img/bird.jpg">
+	</div>
+	<div class="box">
+		<img src="img/cloud.jpg">
+	</div>
+	<div class="box">
+		<img src="img/peak3.jpg">
+	</div>
+	<div class="box">
+		<img src="img/bird.jpg">
+	</div>
+	<div class="box"><img src="img/peak5.jpg"></div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/owl.carousel.js"></script>
+<script type="text/javascript">
+	$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    items:4,
+    autoplay:true,
+    autoplayTimeout:3000,
+    responsive:{
+        0:{
+            items:1
+        },
+        480:{
+            items:2
+        },
+        768:{
+            items:2
+        },
+        992:{
+        	items:4
+        }
+    }
+    
+})
+
+
+
+</script>
+</body>
+</html>
